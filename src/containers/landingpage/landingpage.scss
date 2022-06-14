@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+$home-font: "Dancing Script";
+$primary-color: #fff348;
+
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+
+    .landing-page-image {
+        width: 250px;
+        height: auto;
+
+    }
+    
+    a {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: $home-font;
+        letter-spacing: 0.2rem;
+        text-decoration: none;
+        color: hsl(0 0% 0%);
+    }
+
+    @media only screen and (min-width: 48em) {
+        .landing-page-image {
+            width: 300px;
+        }
+
+        a {
+            font-size: 2rem;
+        }
+    }
+
+    @media only screen and (min-width: 64em) {
+        .landing-page-image {
+            width: 400px;
+        }
+        a {
+            font-size: 2.2rem;
+        }
+    }
+}

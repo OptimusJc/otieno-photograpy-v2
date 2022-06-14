@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// page imports
+import App from "./App";
+import PotraitMen from "./containers/potraits/PotraitMen";
+import PotraitWomen from "./containers/potraits/PotraitWomen";
+import Food from "./containers/food/Food";
+import Architecture from "./containers/architecture/Architecture";
+import About from "./containers/about/About";
+import Contact from "./containers/contact/Contact";
+import LandingPage from "./containers/landingpage/LandingPage";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/home" element={<App />}>
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="architecture" element={<Architecture />} />
+        <Route path="potrait">
+          <Route path="men" element={<PotraitMen />} />
+          <Route path="women" element={<PotraitWomen />} />
+        </Route>
+        <Route path="food" element={<Food />} />
+        <Route path="entry" element={<LandingPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
