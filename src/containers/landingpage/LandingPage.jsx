@@ -11,7 +11,7 @@ const Entry = () => {
         src={landingLogo}
         alt="landing logo"
       />
-      <Link to="/home">enter</Link>
+      <Link to="/">enter</Link>
     </div>
   );
 };

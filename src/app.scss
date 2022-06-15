@@ -107,7 +107,7 @@ input, select {
     font-style: normal;
     font-weight: normal;
     //for github
-    // src: url("./assets/fonts/GOTHIC.woff") format("woff");
+    src: url("./assets/fonts/GOTHIC.woff") format("woff");
     src: url("./assets/fonts/GOTHIC.woff");
 }
 
@@ -115,8 +115,9 @@ $default-font: 'century gothic';
 
 
 body {
-    font-family: $default-font;
+    font-family: $default-font !important;
     background: hsl(0 0% 0%) !important;
+    color: #fff348;
 }
 
 
