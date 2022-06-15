@@ -12,6 +12,11 @@ $primary-color: hsl(56, 100%, 64%);
             .navbar-nav .nav-link {
                 color: $primary-color;
                 font-size: 0.9rem;
+                
+
+                @media only screen and (min-width: 48em) {
+                    padding-inline: 0.9rem;
+                }
             }
 
             .dropdown {
@@ -22,10 +27,20 @@ $primary-color: hsl(56, 100%, 64%);
                     a {
                         color: $primary-color;
                         padding-block: 0.5rem;
+                        font-size: 0.9rem;
 
                         &:hover {
                             background-color: hsl(56 100% 56%);
                             color: hsl(0 0% 0%);
+                        }
+                    }
+
+                    @media only screen and (min-width: 48em) {
+                        padding-block: 0;
+                        margin-block: 0;
+
+                        a {
+                            padding-block: 0.5rem;
                         }
                     }
                 }
@@ -47,5 +62,13 @@ $primary-color: hsl(56, 100%, 64%);
                 height: 1.8rem;
             }
         }
+
+        @media only screen and (min-width: 48em) {
+            .navbar-collapse {
+                flex-grow:initial;
+            }
+        }
     }
+
+  
 }
