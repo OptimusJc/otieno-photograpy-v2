@@ -2,7 +2,6 @@ import "./app.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // container imports
-import LandingPage from "./containers/landingpage/LandingPage";
 import Header from "./components/header/Header";
 
 import { Outlet } from "react-router-dom";

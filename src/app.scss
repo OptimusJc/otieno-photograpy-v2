@@ -111,11 +111,12 @@ input, select {
     // src: url("/images/font/GOTHIC.woff");
 }
 
-$default-font: "GOTHIC", sans-serif;
+$default-font: "Century Gothic", sans-serif;
 
 
 body {
     font-family: $default-font;
+    background: hsl(0 0% 0%) !important;
 }
 
 

@@ -1,7 +1,7 @@
 import landingLogo from "../../assets/logo/otieno_logo_black.png";
 import "./landingpage.scss";
 
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Entry = () => {
   return (

@@ -1,0 +1,51 @@
+$primary-color: hsl(56, 100%, 64%);
+
+.navbar {
+    background-color: hsl(0 0% 0%);
+
+    .navbar-brand .logo {
+        width: 150px;
+    }
+
+    .container  {
+        .navbar-collapse {
+            .navbar-nav .nav-link {
+                color: $primary-color;
+                font-size: 0.9rem;
+            }
+
+            .dropdown {
+                .dropdown-menu {
+                    background-color: hsl(0 0% 0%);
+                    padding-block: 0;
+
+                    a {
+                        color: $primary-color;
+                        padding-block: 0.5rem;
+
+                        &:hover {
+                            background-color: hsl(56 100% 56%);
+                            color: hsl(0 0% 0%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler  {
+            background-color: none;
+            border-radius: 0;
+            padding-inline: 0.5rem;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            .menu-icon {
+                fill: $primary-color;
+                width: 2rem;
+                height: 1.8rem;
+            }
+        }
+    }
+}
